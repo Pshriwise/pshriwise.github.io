@@ -54,10 +54,9 @@ body { background: #181d21; }
 
 header {
    position: relative;
-   height: 800px;
-   min-height: 500px;
+   height: 54px;
    width: 100%;
-   background: url(../images/vancouver_night.jpg) no-repeat top center;
+   background: #13171B;
    background-size: cover !important;
         -webkit-background-size: cover !important;
    text-align: center;
@@ -166,8 +165,9 @@ ul#nav li.current a { color: #fff; }
 /* ------------------------------------------------------------------ */
 
 #hero {
-   padding-top: 66px;
-   background: #23292f url(img/hero-bg.png);
+   height: 500px; 
+   background: #23292f url(../images/stmarys.jpg) no-repeat top center;
+   background-size: cover !important;
    overflow: hidden;
 }
 
@@ -187,6 +187,7 @@ ul#nav li.current a { color: #fff; }
 
 /* Hero Text */
 .hero-text {
+    padding-top: 50px;
 	color: #676e73;
    width: 83%;
    text-align: center;
