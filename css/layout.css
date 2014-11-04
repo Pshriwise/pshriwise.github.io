@@ -56,7 +56,7 @@ header {
    position: relative;
    height: 54px;
    width: 100%;
-   background: #13171B url(../images/vancouver_night.jpg) no-repeat top center;
+   background: url(../images/vancouver_night.jpg) no-repeat top center;
    background-size: cover !important;
         -webkit-background-size: cover !important;
    text-align: center;
