@@ -9,7 +9,7 @@
    a. General and Common Styles
    b. Header Styles
    c. Hero Section
-   d. Features Section
+   d. Biography Section
    e. Pricing Section
    f. Screenshots Section
    g. Call To Action Section
@@ -245,28 +245,28 @@ ul#nav li.current a { color: #fff; }
 
 
 /* ------------------------------------------------------------------ */
-/* d. Features Section
+/* d. Biography Section
 /* ------------------------------------------------------------------ */
 
-#features {
+#bio {
    background: #fff;
    padding-top: 96px;
    padding-bottom: 78px;
    overflow: hidden;
 }
-#features .feature {
+#bio .feature {
    margin-top: 30px;
    margin-bottom: 54px;
 }
-#features .right {
+#bio .right {
    padding-left: 32px;
    float: right;   
 }
-#features .left {
+#bio .left {
    padding-right: 32px;
    float: left;   
 }
-#features h3 {
+#bio h3 {
    font: 16px/24px 'montserrat-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
