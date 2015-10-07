@@ -929,7 +929,7 @@ footer .copyright {
 #imagelightbox-close {	  
    position: fixed;
    z-index: 999;
-   top: 2.5em; /* 40 */
+   top: 4em;
    right: 2.5em; /* 40 */ 
 }
 
@@ -955,7 +955,7 @@ a#imagelightbox-close:hover, a#imagelightbox-close:focus { color: #11ABB0; }
 	z-index: 999;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	top: 0;
 	padding: 0.625em; /* 10 */
 }
 
