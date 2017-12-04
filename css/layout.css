@@ -135,7 +135,6 @@ ul#nav li {
    list-style: none;
    height: 54px;
    display: inline-block;
-
 }
 
 /* Links */
@@ -280,17 +279,15 @@ ul#nav li.current a { color: #fff; }
 /*	e. Pricing Section
 /*----------------------------------------------*/
 
-#pricing {
-	background: #F7F7F7;
+#software_projects {
+   background: #FFFFFF;
    padding-top: 107px;
    padding-bottom: 77px;   
    border-top: 1px solid #F0F0F0;
    border-bottom: 1px solid #F0F0F0;
    text-align: center;
 }
-#pricing .price-block {
-   background: #fff;
-   border: 1px solid #E6E6E6;
+#software_projects .price-block {
    text-align: center;
    margin-bottom: 36px;
 }
@@ -358,7 +355,7 @@ ul.features li:nth-child(even) { }
 /* c. Screenshots
 /* ------------------------------------------------------------------ */
 
-#screenshots {
+#project_images {
    background: #fff url(img/grey.png);
    padding-top: 96px;
    padding-bottom: 120px;
@@ -369,7 +366,7 @@ ul.features li:nth-child(even) { }
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 
-   #screenshots {
+   #project_images {
       background: #fff url(img/grey_@2X.png);
       background-size: 397px 322px;
    }
@@ -377,7 +374,7 @@ ul.features li:nth-child(even) { }
 }
 
 /* Portfolio Content */
-#screenshots-wrapper .columns { padding: 0; }
+#project_images-wrapper .columns { padding: 0; }
 .item .item-wrap {
    background: #fff;
    overflow: hidden;
