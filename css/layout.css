@@ -104,6 +104,21 @@ header .header-social li {
 header .header-social li a { color: #fff; }
 header .header-social li a:hover { color: #11ABB0; }
 
+header a.name{
+   margin: 0 0 0 15px;
+   padding: 8px 8px;
+   font: 11px 'montserrat-regular', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   overflow: visible;
+   color: #00BFFF;
+   line-height: 38px;
+   padding: 8px 8px;
+   float:left;
+}
+
+header a.name:hover { color: #FFF; }
+
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap, #nav-wrap ul, #nav-wrap li, #nav-wrap a {
@@ -159,8 +174,6 @@ ul#nav li a:hover { color: #00BFFF; }
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #fff; }
 
-ul#nav a.name{ color: #00BFFF; }
-ul#nav a.name:hover { color: #FFF; }
 
 ul#nav {
     text-align: center;
