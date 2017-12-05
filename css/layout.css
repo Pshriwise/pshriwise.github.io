@@ -165,9 +165,9 @@ ul#nav li.current a { color: #fff; }
 
 #hero {
    padding-top: 150px;
-   height: 600px; 
+   height: 900px; 
    background: #23292f url(../images/stmarys.jpg) no-repeat;
-   background-position: 50% 80%;
+   background-position: 50% 40%;
    background-size: cover !important;
    overflow: hidden;
 }
