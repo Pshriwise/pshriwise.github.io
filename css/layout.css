@@ -354,7 +354,7 @@ ul.features li:nth-child(even) { }
 }
 
 /* Portfolio Content */
-#project_images-wrapper .columns { padding: 0; }
+#project_images-wrapper .columns { padding: 0px 10px; }
 .item .item-wrap {
    background: #fff;
    overflow: hidden;
