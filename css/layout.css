@@ -270,6 +270,11 @@ ul#nav li a{
    letter-spacing: 1px;
    color: #222;
 }
+
+#bio img {
+    overflow: hidden:
+}
+
 .fluid-video-wrapper { margin-top: 18px; }
 
 
