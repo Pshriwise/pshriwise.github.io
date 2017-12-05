@@ -144,7 +144,7 @@ ul#nav li a {
    display: inline-block;
    padding: 8px 8px;
    line-height: 38px;
-	text-decoration: none;
+   text-decoration: none;
    text-align: left;
    color: #58687A;
 
@@ -154,10 +154,21 @@ ul#nav li a {
 	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 }
-ul#nav li a:hover { color: #fff; }
+ul#nav li a:hover { color: #00BFFF; }
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #fff; }
 
+ul#nav a.name{ color: #00BFFF; }
+ul#nav a.name:hover { color: #FFF; }
+
+ul#nav {
+    text-align: center;
+}
+
+ul#nav li a{
+    color:#fff;
+    height: 80px;
+}
 
 /* ------------------------------------------------------------------ */
 /* c. Hero Section
@@ -218,15 +229,6 @@ ul#nav li.current a { color: #fff; }
    display: block;
 }
 
-ul#nav {
-    text-align: center;
-}
-
-ul#nav li a{
-    color:#fff;
-    height: 80px;
-}
-     
 /* ------------------------------------------------------------------ */
 /* d. Biography Section
 /* ------------------------------------------------------------------ */
