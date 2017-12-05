@@ -663,7 +663,7 @@ input[type="checkbox"] { display: inline; }
 .row .one         { width: 8.33333%; }
 .row .two         { width: 16.66667%; }
 .row .three       { width: 25%; }
-.row .four        { width: 25%; }
+.row .four        { width: 33.33333%; }
 .row .five        { width: 41.66667%; }
 .row .six         { width: 50%; }
 .row .seven       { width: 58.33333%; }
@@ -677,7 +677,7 @@ input[type="checkbox"] { display: inline; }
 .row .offset-1    { margin-left: 8.33333%; }
 .row .offset-2    { margin-left: 16.66667%; }
 .row .offset-3    { margin-left: 25%; }
-.row .offset-4    { margin-left: 33.33333%; }
+.row .offset-4    { margin-left: 35%; }
 .row .offset-5    { margin-left: 41.66667%; }
 .row .offset-6    { margin-left: 50%; }
 .row .offset-7    { margin-left: 58.33333%; }
