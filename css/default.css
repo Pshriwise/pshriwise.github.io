@@ -640,7 +640,6 @@ input[type="checkbox"] { display: inline; }
 }
 
 .column, .columns {
-   position: relative;
    padding: 0 18px;
    min-height: 10px;
    float: left;
@@ -751,15 +750,27 @@ properly.
    .row {
 	   width: 480px;
 	   margin: 0 auto;
-      padding: 0;
-	}
+	   padding: 0;
+   }
+
+   /* block grids on small screens */
+   .s-bgrid-sixths [class*="column"]   { width: 16.66667%; }
+   .s-bgrid-fifths [class*="column"]   { width: 20% } 
+   .s-bgrid-quarters [class*="column"] { width: 25%; }
+   .s-bgrid-thirds [class*="column"]   { width: 33.33333%; }
+   .s-bgrid-halves [class*="column"]   { width: 50%; }
+   
    .column, .columns {
 	   width: auto !important;      
 	   float: none;
-	   margin-left: 0;
-	   margin-right: 0;
-      padding: 0 30px;
    }
+
+   .columns.centered, .columns.centered {
+       align: center;
+       float: none;
+       margin: 0 auto;
+   }
+   
    .row .row { width: auto; max-width: none; margin: 0 -30px; }
 
    [class*="column"] + [class*="column"]:last-child { float: none; }

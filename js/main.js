@@ -16,7 +16,7 @@
 
     	// will fade out the whole DIV that covers the website. 
     	$("#preloader").delay(500).fadeOut("slow").remove();     
-      
+
     	$('.js #hero .hero-image img').addClass("animated fadeInUpBig"); 
       $('.js #hero .buttons a.trial').addClass("animated shake");    
 
@@ -41,8 +41,8 @@
   	nav_wrap.prepend(toggle_button); 
 
   	toggle_button.on("click", function(e) {
-   	e.preventDefault();
-    	nav.slideToggle("fast");     
+   	    e.preventDefault();
+	    nav.slideToggle("fast");
   	});
 
   	if (toggle_button.is(':visible')) nav.addClass('mobile');
@@ -51,7 +51,7 @@
     	else nav.removeClass('mobile');
   	});
 
-  	$('ul#nav li a').on("click", function(){      
+  	$('ul#nav li').on("click", function(){      
    	if (nav.hasClass('mobile')) nav.fadeOut('fast');      
   	});
 
