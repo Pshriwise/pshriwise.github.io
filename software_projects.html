@@ -146,8 +146,8 @@
 
      /* Slideshow container */
      .slideshow-container {
-     width: 800px;
-     height: 450px;
+     max-width: 25%;
+
      position: relative;
      margin: auto;
      background-color: #fff;
@@ -159,8 +159,8 @@
      position: absolute;
      top: 50%;
      width: auto;
-     margin-top: -22px;
-     padding: 16px;
+     margin-top: -30px;
+     padding: 0;
      color: grey;
      font-weight: bold;
      font-size: 18px;
@@ -170,7 +170,12 @@
 
      /* Position the "next button" to the right */
      .next {
-     right: 0;
+     left: 120%;
+     border-radius: 3px 0 0 3px;
+     }
+
+     .prev{
+     right: 120%;
      border-radius: 3px 0 0 3px;
      }
 
@@ -197,9 +202,7 @@
      background: #fff;
      font-size: 12px;
      padding: 8px 12px;
-     position: absolute;
-     bottom: -40px;
-     right: 0px;
+     position: relative;
      }
 
      /* The dots/bullets/indicators */
@@ -216,14 +219,22 @@
 
      .dots {
      background-color: #fff;
+     position: relative;
+     margin: 10 0 0 0;
+     }
+
+     .mySlides .text{
+     max-height: 150px;
+     position: relative;
+     margin: 0 0 0 0;
+     overflow: hidden;
      }
      
      .mySlides img {
      max-width: 800px;
      max-height: 400px;
-     object-fit: contain;
-     position: absolute;
-     bottom: 50px;
+     padding: auto;
+     position: relative;
      }
 
      .active, .dot:hover {
@@ -253,17 +264,14 @@
 
    <div class="slideshow-container">
      <div class="mySlides fade">
-       <div class="numbertext">1 / 3</div>
        <img src="images/screenshots/pppl_fnsf.png" style="width:100%">
        <div class="text"> Fusion Neutron Science Facility (FNSF) nclear heating map</div>
      </div>
      <div class="mySlides fade">
-       <div class="numbertext">2 / 3</div>
        <img src="images/screenshots/yt_analysis.jpg" style="width:100%">
        <div class="text"> Example images generated using the yt-analysis toolkit</div>
      </div>
      <div class="mySlides fade">
-       <div class="numbertext">3 / 3</div>
        <img src="images/screenshots/ds_aabbs8.png" style="width:100%">
        <div class="text"> Axis-Aligned Bounding Boxes of a Slotted Sphere </div>
      </div>
