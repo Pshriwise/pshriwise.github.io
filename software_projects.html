@@ -8,30 +8,30 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Patrick Shriwise - nuclear engineering, programming, computational geometry</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
+   <title>Patrick Shriwise - nuclear engineering, programming, computational geometry</title>
+   <meta name="description" content="">  
+   <meta name="author" content="">
 
    <!-- Mobile Specific Metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-    ================================================== -->
+   <!-- CSS
+   ================================================== -->
    <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/prettyPhoto.css">
 
    <!-- Script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
+   <script src="js/modernizr.js"></script>
 
    <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/sunsym.png" >
-
+   ================================================== -->
+   <link rel="shortcut icon" href="images/sunsym.png" >
+	
 </head>
 
 <body>
@@ -139,66 +139,203 @@
 
    </section>
 
+   <!-- SLIDESHOW STYLE -->
+   <style>
+     * {box-sizing:border-box}
 
-      <section id="project_images">
+     /* Slideshow container */
+     .slideshow-container {
+     width: 800px;
+     height: 450px;
+     position: relative;
+     margin: auto;
+     background-color: #fff;
+     }
 
-      <div class="row section-head">
+     /* Next & previous buttons */
+     .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: grey;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     }
 
-         <h1>Project Screenshots.</h1>
+     /* Position the "next button" to the right */
+     .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+     }
 
-         <p>Some recent results from the projects I've worked on.</p>
+     /* On hover, add a black background color with a little bit see-through */
+     .prev:hover, .next:hover {
+     background-color: #808080;
+     }
 
-      </div>
+     /* Caption text */
+     .text {
+     color: #000;
+     font: 20px/36px 'montserrat-bold', sans-serif;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: -10px;
+     width: 100%;
+     text-align: center;
+     }
 
-      <div class="row">
+     /* Number text (1/3 etc) */
+     .numbertext {
+     color: #000;
+     background: #fff;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: -40px;
+     right: 0px;
+     }
 
-         <div class="twelve columns">
+     /* The dots/bullets/indicators */
+     .dot {
+     cursor:pointer;
+     height: 13px;
+     width: 13px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+     }
 
-            <!-- screenshots-wrapper -->
-            <div id="screenshots-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+     .dots {
+     background-color: #fff;
+     }
+     
+     .mySlides img {
+     max-width: 800px;
+     max-height: 400px;
+     object-fit: contain;
+     position: absolute;
+     bottom: 50px;
+     }
 
-          	   <div class="columns item">
-                  <div class="item-wrap">
+     .active, .dot:hover {
+     background-color: #717171;
+     }
 
-                     <a href="images/screenshots/yt_analysis.jpg" data-imagelightbox="a" >
-                       <img src="images/screenshots/yt_analysis.jpg" alt="yt toolkit visualization examples">
-                        <div class="overlay"></div> 
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+     /* Fading animation */
+     .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+     }
 
-                  </div>
-          		</div> <!-- item end -->
+     @-webkit-keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+     }
 
-               <div class="columns item">
-                  <div class="item-wrap">
+     @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+     }
+   </style>
+   
+   <section id="project_images">
 
-                     <a href="images/screenshots/pppl_fnsf.png" data-imagelightbox="a" >
-                        <img src="images/screenshots/pppl_fnsf.png" alt="ITER first wall dose rate analysis">
-                        <div class="overlay"></div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+   <div class="slideshow-container">
+     <div class="mySlides fade">
+       <div class="numbertext">1 / 11</div>
+       <img src="images/screenshots/pppl_fnsf.png" style="width:100%">
+       <div class="text"> Fusion Neutron Science Facility (FNSF) nclear heating map</div>
+     </div>
+     <div class="mySlides fade">
+       <div class="numbertext">2 / 11</div>
+       <img src="images/screenshots/yt_analysis.jpg" style="width:100%">
+       <div class="text"> Example images generated using the yt-analysis toolkit</div>
+     </div>
+     <div class="mySlides fade">
+       <div class="numbertext">3 / 11</div>
+       <img src="images/screenshots/ds_aabbs8.png" style="width:100%">
+       <div class="text"> Axis-Aligned Bounding Boxes of a Slotted Sphere </div>
+     </div>
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
 
-                  </div>
-          		</div> <!-- item end -->
+   <div class="dots" style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+   </div>
 
-               <div class="columns item">
-                  <div class="item-wrap">
+   <script>
+     var slideIndex = 1;
+     var queue_next = true;
+     var timeoutID = 0;
+     showSlides(slideIndex);
 
-                     <a href="images/screenshots/ds_aabbs8.png" data-imagelightbox="a" >
-                        <img src="images/screenshots/ds_aabbs8.png" alt="Axis-Aligned Bounding Boxes of a Slotted Sphere">
-                        <div class="overlay"></div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+     function nextSlide(n = 1) {
+     showSlides(slideIndex += n);
+     }
 
-                  </div>
-               		</div> <!-- item end -->
-            </div> <!-- portfolio-wrapper end -->
+     function plusSlides(n = 1) {
+     queue_next = false;
+     clearTimeout(timeoutID);
+     showSlides(slideIndex += n);
+     }
 
-         </div> <!-- twelve columns end -->
+     function currentSlide(n) {
+     queue_next = false;
+     clearTimeout(timeoutID);
+     showSlides(slideIndex = n);
+     }
 
-      </div>  <!-- end row -->
+     function showSlides(n) {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";
+					  dots[slideIndex-1].className += " active";
 
-   </section> <!-- Screenshots End -->
+					  if (queue_next) {timeoutID = setTimeout(nextSlide,3000);}
+					  }
+
+					  $(document).keydown(function(evt) {
+					  evt = evt || window.event;
+					  switch (evt.keyCode) {
+					  case 37:
+					  queue_next = false;
+					  clearTimeout(timeoutID);
+					  plusSlides(-1);
+					  break;
+					  case 39:
+					  queue_next = false;
+					  clearTimeout(timeoutID);
+					  plusSlides(1);
+					  break;
+					  }
+					  });
+					  </script>
+
+
+</section>
+
 
          <footer>
 
@@ -243,7 +380,7 @@
          <p class="copyright">&copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></p>
 
          <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+            <a class="smoothscroll" title="Back to Top" href="#nav"><i class="icon-up-open"></i></a>
          </div>
 
       </div> <!-- Row End -->

@@ -107,7 +107,7 @@ header .header-social li a:hover { color: #11ABB0; }
 --------------------------------------------------------------------- */
 #nav-wrap, #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
-	 padding: 0;
+	 padding: 0px 20px;
 	 border: none;
 	 outline: none;
 }
@@ -184,8 +184,6 @@ ul#nav li.current a { color: #fff; }
   
 }
 
-#hero .row { max-width: 1040px; }
-
 /* Hero Text */
 .hero-text {
     padding-top: 50px;
@@ -202,7 +200,7 @@ ul#nav li.current a { color: #fff; }
    text-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
 }
 .hero-text h1 span,
-.hero-text a { color: #11ABB0; }
+.hero-text a { color: #fff; }
 .hero-text p {
    font: 16px/30px 'opensans-regular', sans-serif;
    padding: 0;
@@ -268,8 +266,6 @@ ul#nav li a{
    background: #808080;
    padding-top: 107px;
    padding-bottom: 77px;   
-   border-top: 1px solid #F0F0F0;
-   border-bottom: 1px solid #F0F0F0;
    text-align: center;
 }
 #software_projects .price-block {
